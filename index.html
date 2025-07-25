@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <div id="container"> <!--menampung keseluruhan-->
+            <h1>BLACK JACK Rigged</h1>
+            <p>Dealer:</p> <!---->
+            <p id="dealerCard">card</p> <!--kartu dealer 2 kartu awal, 1 tertutup-->
+            <p id="totaldealerCard">Total Card</p> <!--jumlah keseluruhan kartu dealer-->
+
+            <p class="pemisah"></p>
+
+            <p id="totalplayerCard">Total Card</p> <!--jumlah keseluruhan kartu player-->
+            <p id="playerCard">Card</p> <!--kartu player, 2 awal bisa hit&stand-->
+            <div class="contGame">
+                <button class="game" onclick="hit()">Hit</button> <!--Meminta dealer kartu-->
+                <button class="game" onclick="stand()">stand</button> <!--reveal kartu dealer dimulai dari kartu kedua-->
+                <button class="game" onclick="mulai()">Bet</button> <!--memulai permainan-->
+            </div>
+            <div class="contGame">
+                <button class="game" onclick="kurang()">-</button>
+                <p id="chipJudi" class="game gameP">0</p> <!--jumlah bet yang akan dipilih-->
+                <button class="game" onclick="tambah()">+</button>
+            </div>
+            <p id="chipPlayer">$1000</p> <!--Chip yang dimiliki player-->
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
